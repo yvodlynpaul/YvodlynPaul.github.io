@@ -52,6 +52,9 @@ body{
 .search button img{
     width: 16px;
 }
+.weather{
+    display: none;
+}
 .weather-icon{
     width: 170px;
     margin-top: 30px;
@@ -83,4 +86,14 @@ body{
 }
 .humidity, .wind{
     font-size: 28px;
+}
+
+/* Error message */
+.error{
+    display: none;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: orangered;
 }
