@@ -26,6 +26,7 @@ p{
 
 body{
     background-color: var(--Yellow);
+    min-height: 100vh;
 }
 
 .container{

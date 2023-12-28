@@ -14,6 +14,7 @@
 }
 body{
     background-color: var(--lightGray);
+    min-height: 100vh;
 }
 .container{
     max-width: 360px;
