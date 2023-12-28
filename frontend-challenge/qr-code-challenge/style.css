@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+body{
+    background-color: var(--lightGray);
+}
+.container{
+    max-width: 360px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 21px 21px 4px rgba(0,0,0,0.07);
+-webkit-box-shadow: 3px 21px 21px 4px rgba(0,0,0,0.07);
+-moz-box-shadow: 3px 21px 21px 4px rgba(0,0,0,0.07);
+}
+.container img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.text-box{
+    padding: 20px;
+    text-align: center;
+}
+.text-box h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    color: var(--darkBlue);
+}
+.text-box p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grayishBlue);
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 680px){
+    .container{
+        min-width: 360px;
+    }
+}
