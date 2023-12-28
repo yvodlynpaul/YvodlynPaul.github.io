@@ -79,7 +79,7 @@ body{
 .author-container{
     display: flex;
     align-items: center;
-    padding-top: 25px;
+    padding: 25px 0 5px;
 }
 .author-container img{
     width: 35px;
