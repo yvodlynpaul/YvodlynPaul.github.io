@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    /* Primary Color */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    /* Gradients color*/
+    --BgLightSlateBlue: hsl(252, 100%, 67%);
+    --BgLightRoyalBlue: hsl(241, 81%, 54%);
+
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --Font01: "Hanken Grotesk";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Font01), sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p,
+.denominator {
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--LightLavender);
+}
+
+.score span {
+    color: var(--DarkGrayBlue)
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: var(--White);
+    border-radius: 20px;
+
+    box-shadow: 3px 21px 21px 4px rgba(194, 145, 176, 0.07);
+    -webkit-box-shadow: 3px 21px 21px 4px rgba(43, 32, 43, 0.07);
+    -moz-box-shadow: 3px 21px 21px 4px rgba(251, 40, 212, 0.07);
+}
+
+.container .result-container {
+    max-width: 250px;
+    background: rgb(120, 87, 255);
+    background: linear-gradient(175deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.container .result-container h1 {
+    font-weight: 500;
+    color: var(--LightLavender);
+}
+
+.container .result-container .result {
+    /* background: green; */
+    background: rgb(78, 33, 202);
+    background: linear-gradient(180deg, rgba(78, 33, 202, 1) 0%, rgba(36, 33, 202, 0.01) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 1.25rem auto;
+
+}
+
+.container .result-container {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--White);
+}
+
+.container .result-container h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.container .result-container p {
+    padding: 0 25px;
+}
+
+
+.container .summary-container {
+    min-width: 250px;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.container .summary-container h1 {
+    margin-bottom: 15px;
+}
+
+.container .summary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .summary-box .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+
+.container .summary-box .box:nth-of-type(1) {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    color: var(--LightRed);
+    /* padding: 10px 5px;
+    border-radius: 10px; */
+}
+
+.container .summary-box .box:nth-of-type(2) {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: var(--OrangeyYellow);
+    /*  padding: 10px 5px;
+    border-radius: 10px; */
+}
+
+.container .summary-box .box:nth-of-type(3) {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: var(--GreenTeal);
+    /* padding: 10px 5px;
+    border-radius: 10px; */
+}
+
+.container .summary-box .box:nth-of-type(4) {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: var(--CobaltBlue);
+}
+
+.container .summary-box .box .lcontent {
+    display: flex;
+    gap: 6px;
+}
+
+.container .summary-box .box span {
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--DarkGrayBlue);
+}
+
+.container .summary-box .box .score {
+    color: darkgrey;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.container .summary-container .btn {
+    background-color: var(--DarkGrayBlue);
+    color: var(--White);
+    font-size: .75rem;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 999px;
+}
+
+@media screen and (max-width: 475px) {
+    .container {
+        max-width: auto;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .container .result-container {
+        max-width: 800px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .container .summary-container .btn {
+        margin: 20px 0 25px 0;
+    }
+}
