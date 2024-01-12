@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/* Variables */
+/* Primary colors */
+/* Neutral colors */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  max-width: 50.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: hsl(0, 0%, 95%);
+}
+main .section:nth-child(1),
+main .section:nth-child(2),
+main .section:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  padding: 1.875em;
+}
+main .section:nth-child(1) .top-part,
+main .section:nth-child(2) .top-part,
+main .section:nth-child(3) .top-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main .section:nth-child(1) .top-part h1,
+main .section:nth-child(2) .top-part h1,
+main .section:nth-child(3) .top-part h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+main .section:nth-child(1) .top-part p,
+main .section:nth-child(2) .top-part p,
+main .section:nth-child(3) .top-part p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9375em;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+}
+main .section:nth-child(1) .btn,
+main .section:nth-child(2) .btn,
+main .section:nth-child(3) .btn {
+  width: 120px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.9375em;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+main .section:nth-child(1) .btn:hover,
+main .section:nth-child(2) .btn:hover,
+main .section:nth-child(3) .btn:hover {
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+main .section:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.3125em 0 0 0.3125em;
+}
+main .section:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+main .section:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.3125em 0.3125em 0;
+}
+main .section:nth-child(1) .btn {
+  color: hsl(31, 77%, 52%);
+}
+main .section:nth-child(2) .btn {
+  color: hsl(184, 100%, 22%);
+}
+main .section:nth-child(3) .btn {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 580px) {
+  main {
+    max-width: 18rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 4rem 0;
+  }
+  main .section:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.3125em 0.3125em 0 0;
+  }
+  main .section:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.3125em 0.3125em;
+  }
+}/*# sourceMappingURL=index.css.map */
