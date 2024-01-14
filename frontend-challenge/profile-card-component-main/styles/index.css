@@ -3,8 +3,8 @@ main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 40% 40% 20%;
-  width: 32rem;
-  height: 32rem;
+  width: 22.155rem;
+  height: 22.155rem;
   background-color: white;
   border-radius: 20px;
   z-index: 999;
