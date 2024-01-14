@@ -1,0 +1,59 @@
+@import "./settings";
+@import "./main";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $Font1;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $DarkCyan;
+
+    overflow: hidden;
+
+    &::before {
+        content: url("../images/bg-pattern-top.svg");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -5%;
+        top: -25%;
+    }
+
+    &::after {
+        content: url("../images/bg-pattern-bottom.svg");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 55%;
+        bottom: -50%;
+    }
+
+    @media screen and (max-width:540px) {
+        &::before {
+            content: url("../images/bg-pattern-top.svg");
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: -100%;
+            top: -60%;
+        }
+
+        &::after {
+            content: url("../images/bg-pattern-bottom.svg");
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 200px;
+            bottom: 400px;
+        }
+    }
+}
