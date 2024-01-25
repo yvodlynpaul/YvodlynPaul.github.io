@@ -1,0 +1,90 @@
+main {
+    max-width: 768px;
+    min-height: auto;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 53% 47%;
+    background-color: $DarkBlue;
+    color: $White;
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 40px 50px 40px 40px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+
+            h1 {
+                font-size: 28px;
+
+                span {
+                    color: $SoftViolet;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                font-family: $Font02;
+                color: $SlightlyTransWhite2;
+                line-height: 20px;
+            }
+        }
+
+        .stats-info {
+            display: flex;
+            // justify-content: flex-start;
+            justify-content: space-between;
+            max-width: 90%;
+
+            .stats {
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                gap: 5px;
+
+                h2 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                &>span {
+                    font-size: 10px;
+                    font-family: $Font02;
+                    font-weight: 400;
+                    color: $SlightlyTransWhite2;
+                }
+            }
+        }
+    }
+
+    .right-part {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: hsl(277deg 93.53% 36.29%);
+            filter: opacity(0.5);
+        }
+    }
+
+    @media (width < 568px) {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 0 60px;
+    }
+}

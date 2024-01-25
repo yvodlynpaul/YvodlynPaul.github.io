@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  max-width: 768px;
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 53% 47%;
+  background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+}
+main .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 50px 40px 40px;
+}
+main .left-part .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+main .left-part .content h1 {
+  font-size: 28px;
+}
+main .left-part .content h1 span {
+  color: hsl(277, 64%, 61%);
+}
+main .left-part .content p {
+  font-size: 12px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  line-height: 20px;
+}
+main .left-part .stats-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 90%;
+}
+main .left-part .stats-info .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  gap: 5px;
+}
+main .left-part .stats-info .stats h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+main .left-part .stats-info .stats > span {
+  font-size: 10px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+main .right-part {
+  position: relative;
+}
+main .right-part img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main .right-part::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: hsl(277, 93.53%, 36.29%);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+@media (width < 568px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 60px;
+  }
+}/*# sourceMappingURL=index.css.map */
