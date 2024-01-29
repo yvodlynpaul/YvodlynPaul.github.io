@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+
+    --font: "Karla", sans-serif;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--LightGray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 768px;
+    height: 576px;
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    box-shadow: -1px 5px 48px -1px rgba(0, 0, 0, 0.216);
+}
+
+.top-container {
+    margin: auto 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.top-container h1 {
+    color: var(--Cyan);
+    font-size: 1.5rem;
+    padding-bottom: 6px;
+}
+
+.top-container h2 {
+    color: var(--BrightYellow);
+}
+
+.top-container p {
+    line-height: 24px;
+    color: var(--GrayishBlue);
+}
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    color: white;
+}
+
+.bottom-container .left-part,
+.bottom-container .right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom-container .left-part {
+    background-color: var(--Cyan);
+    padding: 40px;
+}
+
+.left-part div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.left-part div>div span {
+    font-size: 0.9rem;
+    color: var(--LightGray);
+}
+
+.left-part div p {
+    padding-bottom: 10px;
+}
+
+.bottom-container .right-part {
+    background-color: hsl(179, 43%, 50%);
+    padding: 40px 100px 40px 40px;
+}
+
+.bottom-container .right-part p {
+    line-height: 30px;
+    font-size: 1rem;
+    color: var(--LightGray);
+}
+
+button {
+    width: auto;
+    padding: 14px;
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    background-color: var(--BrightYellow);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:780px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:620px) {
+    main {
+        max-width: 370px;
+    }
+
+    main .bottom-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution {
+        visibility: hidden;
+    }
+}
