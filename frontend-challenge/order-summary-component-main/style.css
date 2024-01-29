@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Primary */
+
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+    --font1: "Red Hat Display", sans-serif;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--PaleBlue) url(./images/pattern-background-desktop.svg) no-repeat;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--DesaturatedBlue);
+}
+
+main {
+    max-width: 360px;
+    /*25.9vw;*/
+    max-height: 640px;
+    /*70.4vh;*/
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.image-containter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.content-container {
+    display: flex;
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* .content-container h1{
+    
+} */
+
+.content-container .item {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    background: var(--VeryPaleBlue);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.item .item-left {
+    display: flex;
+    gap: 12px;
+}
+
+.item .item-left {
+    width: 40px;
+    height: 40px;
+}
+
+.item .item-left .item-plan {
+    text-align: left;
+}
+
+.item .item-left .item-plan h2 {
+    font-size: 1rem;
+    color: var(--DarkBlue);
+    font-weight: 700;
+}
+
+.item>p {
+    cursor: pointer;
+}
+
+.item>p:hover {
+    color: hsl(261, 95%, 49%);
+}
+
+button {
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--BrightBlue);
+    font-weight: 700;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(261, 95%, 49%);
+}
+
+h3 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: var(--DesaturatedBlue);
+    cursor: pointer;
+}
+
+h3:hover {
+    color: var(--DarkBlue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        background: url(./images/pattern-background-mobile.svg) no-repeat;
+    }
+
+    .main {
+        min-width: 360px;
+        margin: 0 10px;
+    }
+}
