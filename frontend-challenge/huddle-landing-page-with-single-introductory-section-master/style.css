@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    /* Primary */
+
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+    /* Fonts */
+    --font1: "Open Sans", sans-serif;
+    --font2: "Poppins", sans-serif;
+}
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--Violet) url(./images/bg-desktop.svg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.left-part .logo {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.left-part .logo img {
+    width: 200px;
+}
+
+.right-part {
+    height: 100%;
+}
+
+.right-part .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-part .content h1 {
+    font-family: var(--font2);
+    color: white;
+}
+
+.right-part .content p {
+    font-size: 16px;
+    color: rgb(238, 238, 238);
+    font-family: var(--font1);
+}
+
+.right-part .content button {
+    width: fit-content;
+    padding: 10px 40px;
+    border-radius: 999px;
+    outline: 0;
+    border: 0;
+    color: var(--Violet);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.right-part .content button:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+
+.right-part .social {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+.right-part .social ul {
+    display: flex;
+    gap: 12px;
+}
+
+.right-part .social li {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    list-style: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.right-part .social li:hover {
+    border: 1px solid var(--SoftMagenta);
+}
+
+.right-part .social li a {
+    text-align: center;
+}
+
+.right-part .social li i {
+    font-size: 0.75rem;
+    color: white;
+}
+
+.right-part .social li i:hover {
+    color: var(--SoftMagenta);
+}
+
+@media screen and (max-width:960px) {
+    body {
+        background: var(--Violet) url(./images/bg-mobile.svg) no-repeat center/cover;
+    }
+
+    main {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .social {
+        position: static;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
