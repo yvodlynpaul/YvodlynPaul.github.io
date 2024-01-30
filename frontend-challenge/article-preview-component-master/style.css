@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    /* Colors */
+
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+
+    /* Fonts */
+    --font01: "Manrope", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font01);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    background-color: var(--LightGrayishBlue);
+}
+
+main {
+    /* width: 100%; */
+    max-width: 840px;
+    max-height: 280px;
+    display: flex;
+    background-color: white;
+}
+
+figure {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 12px;
+    position: relative;
+}
+
+.content-box h1 {
+    font-size: 1.3rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.content-box p {
+    font-size: 14px;
+    line-height: 24px;
+    color: hsl(0, 0%, 42%);
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .avatar-container .infos {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.profile .avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+}
+
+.date {
+    color: hsl(0, 0%, 67%);
+}
+
+.profile button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--LightGrayishBlue);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.social {
+    position: absolute;
+    bottom: 80px;
+    right: -50px;
+    visibility: hidden;
+    z-index: 99;
+    width: 200px;
+    height: 40px;
+    background-color: var(--VeryDarkGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.social .triangle-down {
+    position: absolute;
+    bottom: -12px;
+    right: 90px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid var(--VeryDarkGrayishBlue);
+}
+
+.social .share {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--GrayishBlue);
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li img {
+    width: 16px;
+    height: 16px;
+}
+
+
+.social.active {
+    visibility: visible;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:700px) {
+    main {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        /* background-color: white; */
+    }
+
+    .attribution {
+        display: none;
+    }
+}
