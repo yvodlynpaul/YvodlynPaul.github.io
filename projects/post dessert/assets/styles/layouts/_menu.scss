@@ -1,0 +1,97 @@
+.store-menu{
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+    .menu-content{
+        height: 691px;
+        display: flex;
+        flex-direction: column;
+        
+        .slider{
+            width: 1440px;
+            height: 550px;
+            display: grid;
+            grid-template-columns: repeat(3,0.5fr);
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            justify-items: flex-start;
+            position: absolute;
+            // visibility: hidden;opacity: 0;
+            opacity: 0;
+            -webkit-transition: opacity .6s ease-in-out;
+            transition: opacity .6s ease-in-out;
+
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1em;
+
+                h2{
+                    font-size: 1.25em;
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 1.25em;
+                    font-weight: 400;
+                    color: $secondary-color;
+                }
+            }
+            &.active{
+                // visibility: visible;opacity: 1;
+                opacity: 1;
+                -webkit-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+            }
+        }
+
+        .ellipse{
+            width: 550px;
+            height: 550px;
+            background-color: $secondary-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            color: white;
+
+            .left-btn{
+                cursor: pointer;
+                i{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            .right-btn{
+                cursor: pointer;
+                i{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            .right-btn:hover,.left-btn:hover{
+                color: $primary-color;
+            }
+
+        }
+
+        .left{
+            position: absolute;
+            left: -450px;
+            justify-content: flex-end;
+            padding-right:50px;
+        }
+        .right{
+            position: absolute;
+            right: -450px;
+            justify-content: flex-start;
+            padding-left:50px;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+header{
+    min-height: 100vh;
+    padding-bottom: 6.625rem 0;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4em;
+            
+            li{
+                text-transform: capitalize;
+                a{  
+                    color: $primary-color;
+                    position: relative;
+                    font-size: 1.25em;
+                    font-weight: 500;
+
+                    &:hover::before{
+                        content: "";
+                        position: absolute;
+                        margin-left: -0.75rem;
+                        bottom:3px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: $secondary-color;
+                        color: red;
+                    }
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                    &:focus{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-section{
+        display: flex;
+        justify-content: space-between;
+        .left-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1{
+                width: 449px;
+                font-size: 4.375em;
+                font-weight: 700;
+                padding-top: 1.9rem;
+                line-height: 150%;
+            }
+            .hurry{
+                p{
+                    font-size: 2em;
+                    font-weight: 500;
+                    padding-bottom: 1rem;
+                }
+                i{
+                    width: 50%;
+                    text-align: center;
+                    font-size: 2em;
+                    cursor: pointer;
+                    transition: all 0.25s ease-in-out;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

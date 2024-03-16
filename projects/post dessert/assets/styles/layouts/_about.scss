@@ -1,0 +1,48 @@
+.store-about{
+    padding-bottom: 320px;
+
+    .logo{
+        img{
+            width: 451px;
+            height: 268px;
+        }
+    }
+
+    .about-content{
+        display: flex;
+        // justify-content: space-between;
+
+        .about{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 545px;
+            height: 601px;
+            border-radius: 8px;
+            background-color: $secondary-color;
+            padding: 2rem 1rem  1rem;
+
+            h1{
+                font-size: 64px;
+                font-weight: 700;
+            }
+
+            p{
+                width: 488px;
+                font-size: 1.25em;
+                font-weight: 400;
+                line-height: 150.5%;
+            }
+        }
+        .maps{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 448px;
+                height: 500px;
+            }
+        }
+    }
+}

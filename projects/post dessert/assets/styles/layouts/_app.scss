@@ -1,0 +1,52 @@
+.store-app{
+    padding-bottom: 396px;
+    padding-top: 2rem;
+    .main-content{
+        display: flex;
+        gap: 6.5rem;
+        position: relative;
+        .right-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .top-part{
+                display: flex;
+                align-items: flex-end;
+
+                p{
+                    font-size: 1.25em;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+            }
+            .bottom-part{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .app-box{
+                    display: flex;
+                    width: 536px;
+                    height: 85px; 
+                    background-color: $secondary-color;
+                    border-radius: 12px;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 1.25em;
+                    padding-right: 3em;
+
+                    p{
+                        font-size: 1.25em;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        &::after{
+            content: url("..//../images/iphone.svg");
+            position: absolute;
+            right: -230px;
+        }
+    }
+}
