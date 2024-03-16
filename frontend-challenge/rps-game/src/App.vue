@@ -1,6 +1,4 @@
-<template>
-    <h1>RPS - Game</h1>
-</template>
+<template></template>
 
 <script>
 
